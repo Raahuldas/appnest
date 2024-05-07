@@ -1,0 +1,45 @@
+*{
+    scrollbar-width: none;
+}
+
+.navbar-brand{
+    width: 10rem;
+}
+
+.hero-video{
+    height: 80vh;
+}
+
+.card-css{
+    height: 11rem;
+}
+
+.partner-row-css{
+    margin: 25px 0;
+}
+
+.partner-col-css{
+    width: 200px;
+    height: 200px;
+    border: 1px solid whitesmoke;
+    border-radius: 0.5rem;
+    margin: 0 15px;
+    overflow: hidden;
+    background-color: rgb(33, 33, 33);
+}
+
+.partners-main-css{
+    background:linear-gradient(-15deg, rgb(0, 0, 139), black);
+}
+
+.booking-form-css{
+    /* background-color: black; */
+    background: linear-gradient(40deg, rgb(0, 0, 139), black,blue);
+}
+
+
+@media (min-width:1199px) {
+    .form-css{
+        width: 80%;        
+    }
+}
