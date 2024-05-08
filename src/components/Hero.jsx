@@ -11,8 +11,8 @@ function Hero() {
         className="w-100 h-100 object-fit-cover z-n1 position-absolute start-0"
       ></video>
 
-      <div className="py-5 px-2 px-lg-0">
-        <h1 className="display-5 fw-semibold text-white mt-5">
+      <div className="py-5 px-2 px-lg-0 mt-5">
+        <h1 className="display-5 fw-semibold text-white mt-5 pt-5">
           ​​Meet the Digital Drivers of Global Disruptors
         </h1>
         <div className="col-lg-6 mx-lg-auto">

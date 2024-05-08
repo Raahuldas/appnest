@@ -1,8 +1,8 @@
 import React from "react";
 
-function BookingForm() {
+function BookingForm({contact}) {
   return (
-    <div className="booking-form-css text-light">
+    <div className="booking-form-css text-light" ref={contact}>
       <div class="container py-5">
         <div class="row align-items-center g-lg-5 py-5 ">
           <div class="col-lg-6 text-center text-lg-start text-light">

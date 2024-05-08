@@ -1,24 +1,24 @@
-*{
+* {
     scrollbar-width: none;
 }
 
-.navbar-brand{
+.navbar-brand {
     width: 10rem;
 }
 
-.hero-video{
-    height: 80vh;
+.hero-video {
+    height: 100vh;
 }
 
-.card-css{
+.card-css {
     height: 11rem;
 }
 
-.partner-row-css{
+.partner-row-css {
     margin: 25px 0;
 }
 
-.partner-col-css{
+.partner-col-css {
     width: 200px;
     height: 200px;
     border: 1px solid whitesmoke;
@@ -28,18 +28,54 @@
     background-color: rgb(33, 33, 33);
 }
 
-.partners-main-css{
-    background:linear-gradient(-15deg, rgb(0, 0, 139), black);
+.partners-main-css {
+    background: linear-gradient(-15deg, rgb(0, 0, 139), black);
 }
 
-.booking-form-css{
+.booking-form-css {
     /* background-color: black; */
-    background: linear-gradient(40deg, rgb(0, 0, 139), black,blue);
+    background: linear-gradient(40deg, rgb(0, 0, 139), black, blue);
 }
 
 
 @media (min-width:1199px) {
-    .form-css{
-        width: 80%;        
+    .form-css {
+        width: 80%;
     }
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.insta-css, .youtube-css {
+    color:#ea3c3c;
+}
+
+.contact-container-css{
+    width: 50%;
+}
+
+.hover-red:hover{
+    color: red;
+}
+
+@media (max-width:1199px) {
+    .contact-container-css{
+        width: 80%;
+    }
+}
+
+.icn-title {
+    font-size: 1rem;
+    text-align: center;
+}
+
+.docs-link-css{
+    text-decoration: none;
+    color: black;
+}
+
+.venture-title-css{
+    font-family: 'Courier New', Courier, monospace;
 }

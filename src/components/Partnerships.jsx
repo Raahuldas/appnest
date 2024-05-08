@@ -11,7 +11,7 @@ function Partnerships() {
             </h1>
           </div>
 
-          <div class="col-10 col-sm-8 col-lg-6 mt-0 px-0 partners-box-css">
+          <div class="col-10 col-sm-8 col-lg-6 mt-0 px-0 partners-box-css mx-auto">
             <div className="d-flex partner-row-css">
                 <div className="partner-col-css p-5">
                     <img src="/images/aws-partner.svg" alt="partner logo" className="w-100 h-100 object-fit-contain"/>
@@ -25,7 +25,7 @@ function Partnerships() {
                     <img src="/images/google-cloud-partner.svg" alt="partner logo" className="w-100 h-100 object-fit-contain"/>
                 </div>
                 <div className="partner-col-css p-5">
-                    <img src="/images/cloudinary-partner.svg" alt="partner logo" className="w-100 h-100 object-fit-contain"/>
+                    <img src="/images/Hostinger-logo.png" alt="partner logo" className="w-100 h-100 object-fit-contain"/>
                 </div>
             </div>
           </div>

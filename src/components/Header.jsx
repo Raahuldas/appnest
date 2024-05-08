@@ -1,14 +1,23 @@
 import React from 'react'
 
-function Header() {
+function Header({services, contact}) {
+
+  const handleScrollServices = ()=>{
+    services.current.scrollIntoView({behavior:"smooth"});
+  }
+
+  const handleScrollContact = ()=>{
+    contact.current.scrollIntoView({behavior:"smooth"});
+  }
+
   return (
     <nav
-    className="navbar navbar-expand-lg bg-dark border-bottom border-body"
-    data-bs-theme="dark"
+    className="navbar navbar-expand-lg bg-light border-bottom border-dark fixed-top"
+    data-bs-theme=""
   >
     <div className="container-fluid">
       <a className="navbar-brand" href="#">
-        <img src="/images/logo.jpeg" alt="Appnest logo" className='w-100 h-100 object-fit-cover'  />
+        <img src="/images/nav-logo.png" alt="Appnest logo" className='w-100 h-100 object-fit-cover'/>
       </a>
       <button
         className="navbar-toggler"
@@ -26,8 +35,13 @@ function Header() {
           
           <li className="nav-item mx-lg-4">
             <a className="nav-link" href="#">
-              About
+              About Us
             </a>
+          </li>
+          <li className="nav-item mx-lg-4">
+            <div className="nav-link pointer" onClick={handleScrollServices}>
+              Our Services
+            </div>
           </li>
           <li className="nav-item mx-lg-4 dropdown">
             <a
@@ -37,7 +51,69 @@ function Header() {
               data-bs-toggle="dropdown"
               aria-expanded="false"
             >
-              Services
+              Portfolio
+            </a>
+            <ul className="dropdown-menu">
+              <li>
+                <a className="dropdown-item" href="#">
+                  Action
+                </a>
+              </li>
+              <li>
+                <a className="dropdown-item" href="#">
+                  Another action
+                </a>
+              </li>
+              <li>
+                <hr className="dropdown-divider" />
+              </li>
+              <li>
+                <a className="dropdown-item" href="#">
+                  Something else here
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li className="nav-item mx-lg-4 dropdown">
+            <a
+              className="nav-link dropdown-toggle"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Career
+            </a>
+            <ul className="dropdown-menu">
+              <li>
+                <a className="dropdown-item" href="#">
+                  Action
+                </a>
+              </li>
+              <li>
+                <a className="dropdown-item" href="#">
+                  Another action
+                </a>
+              </li>
+              <li>
+                <hr className="dropdown-divider" />
+              </li>
+              <li>
+                <a className="dropdown-item" href="#">
+                  Something else here
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li className="nav-item mx-lg-4 dropdown">
+            <a
+              className="nav-link dropdown-toggle"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Legal Documents
             </a>
             <ul className="dropdown-menu">
               <li>
@@ -62,7 +138,7 @@ function Header() {
           </li>
         </ul>          
         
-          <button className="btn btn-primary px-4 ms-lg-4 me-lg-5" type="submit">
+          <button className="btn btn-primary px-4 ms-lg-4 me-lg-5" onClick={handleScrollContact} >
             Contact Us
           </button>
         
