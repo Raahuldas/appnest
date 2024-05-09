@@ -74,7 +74,7 @@ function Ventures() {
           </div>
         </div>
       </div>
-      <hr className="mx-3 border-2 border-dark opacity-25" />
+      
     </div>
   );
 }

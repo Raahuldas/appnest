@@ -79,3 +79,23 @@
 .venture-title-css{
     font-family: 'Courier New', Courier, monospace;
 }
+
+.sercices-nav-css{
+    font-size: 0.9rem;
+}
+
+.contact-hero{
+    background-image: url("https://images.unsplash.com/photo-1534536281715-e28d76689b4d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.hover-shadow:hover{
+    text-shadow: 0px 0px 30px grey;
+}
+
+.sections-container-css{
+    /* background: linear-gradient(10deg, red, black); */
+    background: linear-gradient(-4deg,black,black,black,black,black, grey, black, grey, black, grey, black)
+}

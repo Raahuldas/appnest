@@ -14,11 +14,11 @@ import { LuBrainCircuit } from "react-icons/lu";
 import { RiRobot2Line } from "react-icons/ri";
 
 
-function OurServices({services}) {
+function OurServices() {
   return (
-    <div class="bg-black py-5" ref={services}>
-      <div class=" container py-5 text-cente rounded-3 text-light">
-        <h1 class="display-4 lh-1 fw-normal mb-5">
+    <div className="bg-black py-5" >
+      <div className=" container py-5 text-cente rounded-3 text-light">
+        <h1 className="display-4 lh-1 fw-normal mb-5">
           We Create New Solutions and Transform Existing Ones with a Development
           Process That Beats Industry-Best Timelines
         </h1>
@@ -27,201 +27,201 @@ function OurServices({services}) {
         </button>
       </div>
 
-      <div class="album py-5 ">
-        <div class="container">
-          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-3">
+      <div className="album py-5 ">
+        <div className="container">
+          <div className="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-3">
 
-            <div class="col">
-              <div class="card shadow-sm bg-dark text-light px-5 card-css pt-3 border text-center border-light-subtle ">
+            <div className="col">
+              <div className="card shadow-sm bg-dark text-light px-5 card-css pt-3 border text-center border-light-subtle ">
                 <div className="card-title fs-1 ">
                   <GiBrain />
                 </div>
 
-                <div class="card-body px-0 ">
-                  <p class="card-text fs-5 ">Artificial Intelligence</p>
+                <div className="card-body px-0 ">
+                  <p className="card-text fs-5 ">Artificial Intelligence</p>
                   
                 </div>
               </div>
             </div>
 
-            <div class="col">
-              <div class="card shadow-sm bg-dark text-light px-5 card-css pt-3 border text-center border-light-subtle ">
+            <div className="col">
+              <div className="card shadow-sm bg-dark text-light px-5 card-css pt-3 border text-center border-light-subtle ">
                 <div className="card-title fs-1 ">
                   <TbDeviceMobileCog/>
                 </div>
 
-                <div class="card-body px-0 ">
-                  <p class="card-text fs-5 ">Mobile App Development</p>
+                <div className="card-body px-0 ">
+                  <p className="card-text fs-5 ">Mobile App Development</p>
                   
                 </div>
               </div>
             </div>
 
-            <div class="col">
-              <div class="card shadow-sm bg-dark text-light px-5 card-css pt-3 border text-center border-light-subtle ">
+            <div className="col">
+              <div className="card shadow-sm bg-dark text-light px-5 card-css pt-3 border text-center border-light-subtle ">
                 <div className="card-title fs-1 ">
                   <GiComputerFan />
                 </div>
 
-                <div class="card-body px-0 ">
-                  <p class="card-text fs-5 ">Software Development</p>
+                <div className="card-body px-0 ">
+                  <p className="card-text fs-5 ">Software Development</p>
                   
                 </div>
               </div>
             </div>
 
-            <div class="col">
-              <div class="card shadow-sm bg-dark text-light px-5 card-css pt-3 border text-center border-light-subtle ">
+            <div className="col">
+              <div className="card shadow-sm bg-dark text-light px-5 card-css pt-3 border text-center border-light-subtle ">
                 <div className="card-title fs-1 ">
                   <GiDigitalTrace />
                 </div>
 
-                <div class="card-body px-0 ">
-                  <p class="card-text fs-5 ">Digital Transmission </p>
+                <div className="card-body px-0 ">
+                  <p className="card-text fs-5 ">Digital Transmission </p>
                   
                 </div>
               </div>
             </div>
 
-            <div class="col">
-              <div class="card shadow-sm bg-dark text-light px-5 card-css pt-3 border text-center border-light-subtle ">
+            <div className="col">
+              <div className="card shadow-sm bg-dark text-light px-5 card-css pt-3 border text-center border-light-subtle ">
                 <div className="card-title fs-1 ">
                   <BsClipboard2Data />
                 </div>
 
-                <div class="card-body px-0 ">
-                  <p class="card-text fs-5 ">Data Science & Analytics</p>
+                <div className="card-body px-0 ">
+                  <p className="card-text fs-5 ">Data Science & Analytics</p>
                   
                 </div>
               </div>
             </div>
 
-            <div class="col">
-              <div class="card shadow-sm bg-dark text-light px-5 card-css pt-3 border text-center border-light-subtle ">
+            <div className="col">
+              <div className="card shadow-sm bg-dark text-light px-5 card-css pt-3 border text-center border-light-subtle ">
                 <div className="card-title fs-1 ">
                   <BsCloudCheckFill />
                 </div>
 
-                <div class="card-body px-0 ">
-                  <p class="card-text fs-5 ">Cloud Services</p>
+                <div className="card-body px-0 ">
+                  <p className="card-text fs-5 ">Cloud Services</p>
                   
                 </div>
               </div>
             </div>
 
-            <div class="col">
-              <div class="card shadow-sm bg-dark text-light px-5 card-css pt-3 border text-center border-light-subtle ">
+            <div className="col">
+              <div className="card shadow-sm bg-dark text-light px-5 card-css pt-3 border text-center border-light-subtle ">
                 <div className="card-title fs-1 ">
                 <FiLink />
                 </div>
 
-                <div class="card-body px-0">
-                  <p class="card-text fs-5 ">BlockChain Services</p>
+                <div className="card-body px-0">
+                  <p className="card-text fs-5 ">BlockChain Services</p>
                   
                 </div>
               </div>
             </div>
 
-            <div class="col">
-              <div class="card shadow-sm bg-dark text-light px-5 card-css pt-3 border text-center border-light-subtle ">
+            <div className="col">
+              <div className="card shadow-sm bg-dark text-light px-5 card-css pt-3 border text-center border-light-subtle ">
                 <div className="card-title fs-1 ">
                 <FaPencilRuler />
                 </div>
 
-                <div class="card-body px-0 ">
-                  <p class="card-text fs-5 ">Ideation & Design Strategy</p>
+                <div className="card-body px-0 ">
+                  <p className="card-text fs-5 ">Ideation & Design Strategy</p>
                   
                 </div>
               </div>
             </div>
 
-            <div class="col">
-              <div class="card shadow-sm bg-dark text-light px-5 card-css pt-3 border text-center border-light-subtle ">
+            <div className="col">
+              <div className="card shadow-sm bg-dark text-light px-5 card-css pt-3 border text-center border-light-subtle ">
                 <div className="card-title fs-1 ">
                 <HiChatBubbleLeftRight />
                 </div>
 
-                <div class="card-body px-0 ">
-                  <p class="card-text fs-5 ">IT Consulting</p>
-                  <div class="d-flex justify-content-between align-items-center">
+                <div className="card-body px-0 ">
+                  <p className="card-text fs-5 ">IT Consulting</p>
+                  <div className="d-flex justify-content-between align-items-center">
                   </div>
                 </div>
               </div>
             </div>
 
-            <div class="col">
-              <div class="card shadow-sm bg-dark text-light px-5 card-css pt-3 border text-center border-light-subtle ">
+            <div className="col">
+              <div className="card shadow-sm bg-dark text-light px-5 card-css pt-3 border text-center border-light-subtle ">
                 <div className="card-title fs-1 ">
                 <PiInfinity />
                 </div>
 
-                <div class="card-body px-0 ">
-                  <p class="card-text fs-5 ">DevOps</p>
+                <div className="card-body px-0 ">
+                  <p className="card-text fs-5 ">DevOps</p>
                   
                 </div>
               </div>
             </div>
 
-            <div class="col">
-              <div class="card shadow-sm bg-dark text-light px-5 card-css pt-3 border text-center border-light-subtle ">
+            <div className="col">
+              <div className="card shadow-sm bg-dark text-light px-5 card-css pt-3 border text-center border-light-subtle ">
                 <div className="card-title fs-1 ">
                 <TbDeviceMobileCog />
                 </div>
 
-                <div class="card-body px-0 ">
-                  <p class="card-text fs-5 ">IOT App Deveopment</p>
+                <div className="card-body px-0 ">
+                  <p className="card-text fs-5 ">IOT App Deveopment</p>
                   
                 </div>
               </div>
             </div>
 
-            <div class="col">
-              <div class="card shadow-sm bg-dark text-light px-5 card-css pt-3 border text-center border-light-subtle ">
+            <div className="col">
+              <div className="card shadow-sm bg-dark text-light px-5 card-css pt-3 border text-center border-light-subtle ">
                 <div className="card-title fs-1 ">
                 <BsCloudCheckFill />
                 </div>
 
-                <div class="card-body px-0 ">
-                  <p class="card-text fs-5 ">Cloud Managed Services</p>
+                <div className="card-body px-0 ">
+                  <p className="card-text fs-5 ">Cloud Managed Services</p>
                   
                 </div>
               </div>
             </div>
 
-            <div class="col">
-              <div class="card shadow-sm bg-dark text-light px-5 card-css pt-3 border text-center border-light-subtle ">
+            <div className="col">
+              <div className="card shadow-sm bg-dark text-light px-5 card-css pt-3 border text-center border-light-subtle ">
                 <div className="card-title fs-1 ">
                 <FaVrCardboard/>
                 </div>
 
-                <div class="card-body px-0 ">
-                  <p class="card-text fs-5 ">AR VR App Development</p>
+                <div className="card-body px-0 ">
+                  <p className="card-text fs-5 ">AR VR App Development</p>
                   
                 </div>
               </div>
             </div>
 
-            <div class="col">
-              <div class="card shadow-sm bg-dark text-light px-5 card-css pt-3 border text-center border-light-subtle ">
+            <div className="col">
+              <div className="card shadow-sm bg-dark text-light px-5 card-css pt-3 border text-center border-light-subtle ">
                 <div className="card-title fs-1 ">
                 <LuBrainCircuit />
                 </div>
 
-                <div class="card-body px-0 ">
-                  <p class="card-text fs-5 ">Business Intelligence</p>
+                <div className="card-body px-0 ">
+                  <p className="card-text fs-5 ">Business Intelligence</p>
                   
                 </div>
               </div>
             </div>
 
-            <div class="col">
-              <div class="card shadow-sm bg-dark text-light px-5 card-css pt-3 border text-center border-light-subtle ">
+            <div className="col">
+              <div className="card shadow-sm bg-dark text-light px-5 card-css pt-3 border text-center border-light-subtle ">
                 <div className="card-title fs-1 ">
                 <RiRobot2Line/>
                 </div>
 
-                <div class="card-body px-0 ">
-                  <p class="card-text fs-5 ">Machine Learning</p>
+                <div className="card-body px-0 ">
+                  <p className="card-text fs-5 ">Machine Learning</p>
                   
                 </div>
               </div>

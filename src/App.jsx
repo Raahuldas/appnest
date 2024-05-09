@@ -1,28 +1,28 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js"
+import { Route, Routes } from "react-router-dom";
+import HomePage from "./routes/HomePage";
+import PageNotFound from "./components/PageNotFound";
+import Services from "./routes/Services";
 import Header from "./components/Header";
-import Hero from "./components/Hero";
-import OurServices from "./components/OurServices";
-import Partnerships from "./components/Partnerships";
-import BookingForm from "./components/BookingForm";
-import { useRef } from "react";
-import Footer from "./components/Footer";
 import CopyRight from "./components/CopyRight";
-import Ventures from "./components/Ventures";
+import ContactPage from "./routes/ContactPage";
+
+
 
 function App() {
-  const services =useRef()
-  const contact =useRef()
+
   return (
     <>
-     <Header services={services} contact={contact} />
-     <Hero/>
-     <OurServices services={services} />
-     <Partnerships/>
-     <BookingForm contact={contact} />
-     {/* <Footer/> */}
-     <Ventures/>
-     <CopyRight/>
+    <Header/>
+    <Routes>
+      <Route path="/" element={<HomePage />} />
+      <Route path="/services" element={<Services/>} />
+      <Route path="/contact" element={<ContactPage/>}/>
+      <Route path="*" element={<PageNotFound />} />
+    </Routes>
+    <hr className="mx-3 border-2 border-dark opacity-25"/>
+    <CopyRight />
     </>
   );
 }

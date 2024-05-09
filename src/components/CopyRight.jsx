@@ -12,10 +12,10 @@ import { SlPhone } from "react-icons/sl";
 import { TfiWorld } from "react-icons/tfi";
 function CopyRight() {
   return (
-    <div class="p-5 pb-0 text-center">
+    <div className="p-5 pb-0 text-center">
       <div className="container mx-auto">
-        <div class="row mx-auto align-items-center g-5 px-3 pb-5">
-          <div class="col-12 col-sm-12 col-lg-8 ">
+        <div className="row mx-auto align-items-center g-5 px-3 pb-5">
+          <div className="col-12 col-sm-12 col-lg-8 ">
             <div className="w-50">
               <img
                 src="/images/nav-logo.png"
@@ -61,7 +61,7 @@ function CopyRight() {
               </div>
             </div>
           </div>
-          <div class="col-12 col-sm-12 col-lg-4 mt-0 px-0 partners-box-css text-start mt-3 ms-4 ms-lg-0 ">
+          <div className="col-12 col-sm-12 col-lg-4 mt-0 px-0 partners-box-css text-start mt-3 ms-4 ms-lg-0 ">
             <div className="ms-lg-auto contact-container-css">
               <div className="my-2">
                 <SlPhone /> +91 9148054905
@@ -86,11 +86,11 @@ function CopyRight() {
           Limited, India &#x2022;{" "}
           <span className="fw-light">
             {" "}
-            <a href="/docs/disclaimer.pdf" className="hover-red  docs-link-css">
+            <a href="/docs/privacy-policy-pos.pdf" className="hover-red  docs-link-css">
               Privacy{" "}
             </a>{" "}
-            &#x2022; <a href="/docs/disclaimer.pdf" className="hover-red docs-link-css">Terms </a> &#x2022;{" "}
-            <a href="/docs/disclaimer.pdf" className="hover-red docs-link-css">Cancellation & Refund </a>{" "}
+            &#x2022; <a href="/docs/terms-and-conditions-pos.pdf" className="hover-red docs-link-css">Terms </a> &#x2022;{" "}
+            <a href="/docs/cancellation-and-refund-pos.pdf" className="hover-red docs-link-css">Cancellation & Refund </a>{" "}
             &#x2022;
             <a href="/docs/disclaimer.pdf" className="hover-red docs-link-css">
               Declaration{" "}
