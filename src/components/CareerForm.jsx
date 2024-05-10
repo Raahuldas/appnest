@@ -3,6 +3,7 @@ import React from "react";
 function CareerForm() {
   return (
     <div className="container py-5">
+        <h1 className="text-center">Drop Your Resume Here</h1>
       <div className="row flex-lg-row-revers align-items-center g-5 py-5">
         
         <div className="col-lg-6">
