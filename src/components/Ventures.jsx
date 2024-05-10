@@ -3,7 +3,7 @@ import React from "react";
 function Ventures() {
   return (
     <div className="w-100 my-5 text-center">
-      <h1 className="fs-2 fw-bold mb-0 px-3 pb-0 venture-title-css">
+      <h1 className="fs-1 fw-bold mb-0 px-3 pb-0 venture-title-css">
         Our Ventures
       </h1>
 

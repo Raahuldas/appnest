@@ -21,8 +21,7 @@ function Services() {
       <ServicesHero />
       <ServicesNav product={product} mobile={mobile} digital={digital} software={software} cloud={cloud} blockchain={blockchain} data={data} ai={ai} it={it} devOps={devOps} />
       <ServicesSections product={product} mobile={mobile} digital={digital} software={software} cloud={cloud} blockchain={blockchain} data={data} ai={ai} it={it} devOps={devOps} />
-
-      {/* <ServicesMsgBox/> */}
+      <ServicesMsgBox/>
     </>
   );
 }

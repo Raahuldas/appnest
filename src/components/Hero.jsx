@@ -1,6 +1,8 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Hero() {
+  
   return (
     <div className="bg-dar text-secondary text-lg-center hero-video overflow-hidden ">
       <video
@@ -21,12 +23,14 @@ function Hero() {
             conquer complex challenges through innovation and agility.
           </p>
           <div className="d-flex justify-content-lg-center">
+            <Link to={"/contact"}>
             <button
               type="button"
               className="btn btn-outline-light btn-lg px-4 me-sm-3 fw-bold"
             >
               Consult our experts &gt;
             </button>
+            </Link>
           </div>
         </div>
       </div>

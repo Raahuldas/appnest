@@ -12,9 +12,14 @@ import { HiChatBubbleLeftRight } from "react-icons/hi2";
 import { FaVrCardboard } from "react-icons/fa6";
 import { LuBrainCircuit } from "react-icons/lu";
 import { RiRobot2Line } from "react-icons/ri";
+import { useNavigate } from "react-router-dom";
 
 
 function OurServices() {
+  const navigate = useNavigate();
+  const handleServices = () =>{
+    navigate("/services")
+  }
   return (
     <div className="bg-black py-5" >
       <div className=" container py-5 text-cente rounded-3 text-light">
@@ -22,7 +27,7 @@ function OurServices() {
           We Create New Solutions and Transform Existing Ones with a Development
           Process That Beats Industry-Best Timelines
         </h1>
-        <button className="btn btn-outline-light px-4 py-2">
+        <button className="btn btn-outline-light px-4 py-2" onClick={handleServices} >
           Our Services &gt;{" "}
         </button>
       </div>

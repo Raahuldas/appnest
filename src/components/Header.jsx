@@ -36,77 +36,26 @@ function Header() {
         <div className="collapse navbar-collapse " id="navbarSupportedContent">
           <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
             <li className="nav-item mx-lg-4">
-              <a className="nav-link" href="#">
+              <Link className="nav-link" to={"/about"}>
                 About Us
-              </a>
+              </Link>
             </li>
             <li className="nav-item mx-lg-4 ">
               <Link to={"/services"} className="text-decoration-none">
                 <div className="nav-link pointer">Our Services</div>
               </Link>
             </li>
-            <li className="nav-item mx-lg-4 dropdown">
-              <a
-                className="nav-link dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
+            <li className="nav-item mx-lg-4">
+              <a className="nav-link" href="#">
                 Portfolio
               </a>
-              <ul className="dropdown-menu">
-                <li>
-                  <a className="dropdown-item" href="#">
-                    Action
-                  </a>
-                </li>
-                <li>
-                  <a className="dropdown-item" href="#">
-                    Another action
-                  </a>
-                </li>
-                <li>
-                  <hr className="dropdown-divider" />
-                </li>
-                <li>
-                  <a className="dropdown-item" href="#">
-                    Something else here
-                  </a>
-                </li>
-              </ul>
             </li>
-            <li className="nav-item mx-lg-4 dropdown">
-              <a
-                className="nav-link dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
+            <li className="nav-item mx-lg-4">
+              <Link className="nav-link" to={"/career"}>
                 Career
-              </a>
-              <ul className="dropdown-menu">
-                <li>
-                  <a className="dropdown-item" href="#">
-                    Action
-                  </a>
-                </li>
-                <li>
-                  <a className="dropdown-item" href="#">
-                    Another action
-                  </a>
-                </li>
-                <li>
-                  <hr className="dropdown-divider" />
-                </li>
-                <li>
-                  <a className="dropdown-item" href="#">
-                    Something else here
-                  </a>
-                </li>
-              </ul>
+              </Link>
             </li>
+            
             <li className="nav-item mx-lg-4 dropdown">
               <a
                 className="nav-link dropdown-toggle"
