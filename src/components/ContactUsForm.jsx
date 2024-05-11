@@ -1,33 +1,32 @@
-import React, { useRef } from "react";
-import emailjs from '@emailjs/browser';
+import axios from "axios";
+import React from "react";
 
 function ContactUsForm() {
-  const form = useRef();
 
-  const sendEmail = (e) => {
+  const handleSubmitContactForm =async (e)=>{
     e.preventDefault();
+console.log(e);
 
-    emailjs
-      .sendForm("service_4rb9e3t", "template_isrg8ar", form.current, {
-        publicKey: "iSGFN1Lfp7vPxa7Ru",
-      })
-      .then(
-        () => {
-            alert("Successfully sent")
-          console.log("SUCCESS!");
-        },
-        (error) => {
-            alert("failed")
-          console.log("FAILED...", error.text);
-        }
-      );
-  };
+try {
+  await axios.post("http://localhost:3000/api/v1/contacts/create",{
+    name: e.target.elements.fullname.value,
+    contact: e.target.elements.contact.value,
+    email: e.target.elements.email.value,
+    budget: e.target.elements.budget.value,
+    project: e.target.elements.project.value,
+  })
 
+  alert("sent succesfully")
+
+} catch (error) {
+  console.log(error);
+}
+
+  }
   return (
     <form
       className="form-css py-4 borde rounded-3 bg-black px-4 mx-lg-auto mt-5 mt-lg-0"
-      ref={form}
-      onSubmit={sendEmail}
+      onSubmit={(e)=>handleSubmitContactForm(e)}
     >
       <div className="form-floating mb-3 border-bottom border-1">
         <input
@@ -35,7 +34,7 @@ function ContactUsForm() {
           className="form-control border-0 bg-black text-light"
           id="floatingFullname"
           placeholder="Full Name"
-          name="full_name"
+          name="fullname"
         />
         <label htmlFor="floatingFullname">Full Name*</label>
       </div>
