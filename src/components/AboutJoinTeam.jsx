@@ -31,7 +31,8 @@ function AboutJoinTeam() {
               </div>
               <div className="team-col-css ">
                 <img
-                  src="https://appinventiv.com/wp-content/themes/twentynineteen-child/images/join-appi-team1.webp"
+                src="https://images.unsplash.com/photo-1541140911322-98afe66ea6da?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  
                   alt="partner logo"
                   className="w-100 h-100 object-fit-cover"
                 />
@@ -40,14 +41,15 @@ function AboutJoinTeam() {
             <div className="d-flex team-row-css">
               <div className="team-col-css ">
                 <img
-                  src="https://appinventiv.com/wp-content/themes/twentynineteen-child/images/join-appi-team1.webp"
+                src="https://images.unsplash.com/photo-1511467687858-23d96c32e4ae?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  
                   alt="partner logo"
                   className="w-100 h-100 object-fit-cover"
                 />
               </div>
               <div className="team-col-css ">
                 <img
-                  src="https://appinventiv.com/wp-content/themes/twentynineteen-child/images/join-team-img3.webp"
+                  src="https://plus.unsplash.com/premium_photo-1683120730432-b5ea74bd9047?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                   alt="partner logo"
                   className="w-100 h-100 object-fit-cover"
                 />

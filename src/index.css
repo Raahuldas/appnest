@@ -28,6 +28,18 @@
     background-color: rgb(33, 33, 33);
 }
 
+@media (max-width:410px) {
+    .partner-col-css{
+        height: 150px;
+    }
+}
+
+@media (max-width:350px) {
+    .partner-col-css{
+        height: 120px;
+    }
+}
+
 .team-col-css {
     width: 200px;
     height: 200px;
@@ -113,4 +125,8 @@
 
 .hero-career{
     height: 60vh;
+}
+
+.ventures-img-css{
+    min-width: 100px;
 }
