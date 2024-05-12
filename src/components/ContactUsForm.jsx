@@ -8,7 +8,7 @@ function ContactUsForm() {
 console.log(e);
 
 try {
-  await axios.post("http://localhost:3000/api/v1/contacts/create",{
+  await axios.post("http://localhost:8000/api/v1/contacts/create",{
     name: e.target.elements.fullname.value,
     contact: e.target.elements.contact.value,
     email: e.target.elements.email.value,
