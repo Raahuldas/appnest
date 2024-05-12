@@ -7,7 +7,7 @@ function CareerForm() {
     console.log(e);
     try {
        await axios.post(
-        "http://localhost:8000/api/v1/careers/create",
+        "/api/v1/careers/create",
         {
           name: e.target.elements.name.value,
           email: e.target.elements.email.value,
