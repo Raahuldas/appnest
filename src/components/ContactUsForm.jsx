@@ -2,31 +2,29 @@ import axios from "axios";
 import React from "react";
 
 function ContactUsForm() {
-
-  const handleSubmitContactForm =async (e)=>{
+  const handleSubmitContactForm = async (e) => {
     e.preventDefault();
-console.log(e);
+    console.log(e);
 
-try {
-  await axios.post("http://localhost:8000/api/v1/contacts/create",{
-    name: e.target.elements.fullname.value,
-    contact: e.target.elements.contact.value,
-    email: e.target.elements.email.value,
-    budget: e.target.elements.budget.value,
-    project: e.target.elements.project.value,
-  })
+    try {
+      await axios.post("http://localhost:8000/api/v1/contacts/create", {
+        fullname: e.target.elements.fullname.value,
+        contact: e.target.elements.contact.value,
+        email: e.target.elements.email.value,
+        budget: e.target.elements.budget.value,
+        project: e.target.elements.project.value,
+      });
 
-  alert("sent succesfully")
-
-} catch (error) {
-  console.log(error);
-}
-
-  }
+      alert("sent succesfully !");
+    } catch (error) {
+      alert("Failed !!!");
+      console.log(error);
+    }
+  };
   return (
     <form
       className="form-css py-4 borde rounded-3 bg-black px-4 mx-lg-auto mt-5 mt-lg-0"
-      onSubmit={(e)=>handleSubmitContactForm(e)}
+      onSubmit={(e) => handleSubmitContactForm(e)}
     >
       <div className="form-floating mb-3 border-bottom border-1">
         <input

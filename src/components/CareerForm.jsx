@@ -1,45 +1,51 @@
-import React, { useRef } from 'react';
-import emailjs from '@emailjs/browser';
+import axios from "axios";
+import React from "react";
 
 function CareerForm() {
-  const form = useRef();
-
-  const sendEmail = (e) => {
+  const handleSubmitCareerForm = async (e) => {
     e.preventDefault();
-
-    emailjs
-      .sendForm('service_dixjunh', 'template_zgv7jv3', form.current, {
-        publicKey: 'iSGFN1Lfp7vPxa7Ru',
-      })
-      .then(
-        () => {
-          alert("Application sent successfully")
-          console.log('SUCCESS!');
+    console.log(e);
+    try {
+       await axios.post(
+        "http://localhost:8000/api/v1/careers/create",
+        {
+          name: e.target.elements.name.value,
+          email: e.target.elements.email.value,
+          phone: e.target.elements.phone.value,
+          appliedFor: e.target.elements.appliedFor.value,
+          resume: e.target.elements.resume.files[0],
         },
-        (error) => {
-          alert("Failed..",error.text)
-          console.log('FAILED...', error.text);
-        },
+        {
+          headers: { "Content-Type": "multipart/form-data" },
+        }
       );
+
+      alert("Sent Successfully !");
+    } catch (error) {
+      alert("Failed !!!");
+      console.log(error);
+    }
   };
 
   return (
     <div className="container py-5">
-        <h1 className="text-center">Drop Your Resume Here</h1>
+      <h1 className="text-center">Drop Your Resume Here</h1>
       <div className="row flex-lg-row-revers align-items-center g-5 py-5">
-        
         <div className="col-lg-6">
           <img src="/images/resume.jpg" alt="" />
         </div>
         <div className="col-10 col-sm-8 col-lg-6 px-lg-5">
-          <form class="p-4 p-md-5 border rounded-3 bg-body-tertiary form-css" onSubmit={sendEmail} ref={form}>
+          <form
+            class="p-4 p-md-5 border rounded-3 bg-body-tertiary form-css"
+            onSubmit={(e) => handleSubmitCareerForm(e)}
+          >
             <div class="form-floating mb-3">
               <input
                 type="text"
                 class="form-control"
                 id="floatingName"
                 placeholder="Name"
-                name='from_name'
+                name="name"
               />
               <label for="floatingName">Name</label>
             </div>
@@ -49,7 +55,7 @@ function CareerForm() {
                 class="form-control"
                 id="floatingInput"
                 placeholder="Email"
-                name='from_email'
+                name="email"
               />
               <label for="floatingInput">Email address</label>
             </div>
@@ -59,7 +65,7 @@ function CareerForm() {
                 class="form-control"
                 id="floatingPhone"
                 placeholder="Phone Number"
-                name='phone'
+                name="phone"
               />
               <label for="floatingPhone">Phone Number</label>
             </div>
@@ -69,7 +75,7 @@ function CareerForm() {
                 class="form-control"
                 id="floatingApply"
                 placeholder="Applied For"
-                name='job_role'
+                name="appliedFor"
               />
               <label for="floatingApply">Applied For</label>
             </div>
@@ -79,7 +85,7 @@ function CareerForm() {
                 class="form-control"
                 id="floatingResume"
                 placeholder="Resume"
-                name='resume'
+                name="resume"
               />
               <label for="floatingResume">Resume</label>
             </div>
@@ -89,7 +95,6 @@ function CareerForm() {
           </form>
           <div className="grid gap-3"></div>
         </div>
-
       </div>
     </div>
   );
