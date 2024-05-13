@@ -16,6 +16,12 @@ function ContactUsForm() {
       });
 
       alert("sent succesfully !");
+
+      e.target.elements.fullname.value = "";
+      e.target.elements.contact.value = "";
+      e.target.elements.email.value = "";
+      e.target.elements.budget.value = "Select a Budget Range*";
+      e.target.elements.project.value = "";
     } catch (error) {
       alert("Failed !!!");
       console.log(error);

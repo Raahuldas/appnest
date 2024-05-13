@@ -2,11 +2,11 @@ import React from "react";
 
 function AboutCoreValue() {
   return (
-    <div class="my-5">
-      <div class="p-5 text-center">
-        <div class="container py-5">
-          <h1 class="text-body-emphasis">Our Core Values</h1>
-          <p class="col-lg-10 mx-auto lead fw-medium">
+    <div className="my-5">
+      <div className="p-5 text-center">
+        <div className="container py-5">
+          <h1 className="text-body-emphasis">Our Core Values</h1>
+          <p className="col-lg-10 mx-auto lead fw-medium">
             We’re enthusiastic learners and seasoned inventors. Together, we can
             create solutions that serve not just technology but the humans
             behind it.{" "}

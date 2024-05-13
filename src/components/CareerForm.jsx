@@ -36,60 +36,60 @@ function CareerForm() {
         </div>
         <div className="col-10 col-sm-8 col-lg-6 px-lg-5">
           <form
-            class="p-4 p-md-5 border rounded-3 bg-body-tertiary form-css"
+            className="p-4 p-md-5 border rounded-3 bg-body-tertiary form-css"
             onSubmit={(e) => handleSubmitCareerForm(e)}
           >
-            <div class="form-floating mb-3">
+            <div className="form-floating mb-3">
               <input
                 type="text"
-                class="form-control"
+                className="form-control"
                 id="floatingName"
                 placeholder="Name"
                 name="name"
               />
               <label for="floatingName">Name</label>
             </div>
-            <div class="form-floating mb-3">
+            <div className="form-floating mb-3">
               <input
                 type="email"
-                class="form-control"
+                className="form-control"
                 id="floatingInput"
                 placeholder="Email"
                 name="email"
               />
               <label for="floatingInput">Email address</label>
             </div>
-            <div class="form-floating mb-3">
+            <div className="form-floating mb-3">
               <input
                 type="text"
-                class="form-control"
+                className="form-control"
                 id="floatingPhone"
                 placeholder="Phone Number"
                 name="phone"
               />
               <label for="floatingPhone">Phone Number</label>
             </div>
-            <div class="form-floating mb-3">
+            <div className="form-floating mb-3">
               <input
                 type="text"
-                class="form-control"
+                className="form-control"
                 id="floatingApply"
                 placeholder="Applied For"
                 name="appliedFor"
               />
               <label for="floatingApply">Applied For</label>
             </div>
-            <div class="form-floating mb-3">
+            <div className="form-floating mb-3">
               <input
                 type="file"
-                class="form-control"
+                className="form-control"
                 id="floatingResume"
                 placeholder="Resume"
                 name="resume"
               />
               <label for="floatingResume">Resume</label>
             </div>
-            <button class="w-100 btn btn-lg btn-primary" type="submit">
+            <button className="w-100 btn btn-lg btn-primary" type="submit">
               Submit
             </button>
           </form>

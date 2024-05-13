@@ -9,6 +9,8 @@ import CopyRight from "./components/CopyRight";
 import ContactPage from "./routes/ContactPage";
 import AboutPage from "./routes/AboutPage";
 import CareerPage from "./routes/CareerPage";
+import ContactResult from "./components/ContactResult";
+import CareerResult from "./components/CareerResult";
 
 
 
@@ -23,6 +25,9 @@ function App() {
       <Route path="/contact" element={<ContactPage/>}/>
       <Route path="/about" element={<AboutPage/>}/>
       <Route path="/career" element={<CareerPage/>}/>
+      <Route path="/contact-result" element={<ContactResult/>}/>
+      <Route path="/career-result" element={<CareerResult/>}/>
+
       <Route path="*" element={<PageNotFound />} />
     </Routes>
     <hr className="mx-3 border-2 border-dark opacity-25"/>
